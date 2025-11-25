@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Ocean blues and teals with amber/gold accents */
+    --background: 200 25% 97%;
+    --foreground: 200 50% 15%;
+
+    --card: 200 35% 98%;
+    --card-foreground: 200 50% 15%;
+
+    --popover: 200 35% 98%;
+    --popover-foreground: 200 50% 15%;
+
+    --primary: 195 85% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 45% 55%;
+    --secondary-foreground: 200 50% 15%;
+
+    --muted: 195 30% 90%;
+    --muted-foreground: 200 20% 45%;
+
+    --accent: 40 90% 55%;
+    --accent-foreground: 200 50% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 195 25% 85%;
+    --input: 195 25% 85%;
+    --ring: 195 85% 35%;
+
+    --radius: 0.75rem;
+
+    --ocean-deep: 200 85% 25%;
+    --ocean-medium: 195 75% 45%;
+    --teal-light: 180 55% 65%;
+    --amber: 40 90% 55%;
+    --gold: 45 95% 48%;
+
+    --sidebar-background: 200 30% 95%;
+    --sidebar-foreground: 200 50% 15%;
+    --sidebar-primary: 195 85% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 180 45% 55%;
+    --sidebar-accent-foreground: 200 50% 15%;
+    --sidebar-border: 195 25% 85%;
+    --sidebar-ring: 195 85% 35%;
+  }
+
+  .dark {
+    --background: 200 50% 8%;
+    --foreground: 200 20% 90%;
+
+    --card: 200 45% 12%;
+    --card-foreground: 200 20% 90%;
+
+    --popover: 200 45% 12%;
+    --popover-foreground: 200 20% 90%;
+
+    --primary: 180 70% 50%;
+    --primary-foreground: 200 50% 8%;
+
+    --secondary: 195 45% 25%;
+    --secondary-foreground: 200 20% 90%;
+
+    --muted: 200 40% 18%;
+    --muted-foreground: 200 15% 60%;
+
+    --accent: 40 85% 60%;
+    --accent-foreground: 200 50% 8%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 200 20% 90%;
+
+    --border: 200 40% 20%;
+    --input: 200 40% 20%;
+    --ring: 180 70% 50%;
+
+    --ocean-deep: 200 85% 15%;
+    --ocean-medium: 195 75% 35%;
+    --teal-light: 180 55% 55%;
+    --amber: 40 90% 65%;
+    --gold: 45 95% 58%;
+
+    --sidebar-background: 200 50% 10%;
+    --sidebar-foreground: 200 20% 90%;
+    --sidebar-primary: 180 70% 50%;
+    --sidebar-primary-foreground: 200 50% 8%;
+    --sidebar-accent: 195 45% 25%;
+    --sidebar-accent-foreground: 200 20% 90%;
+    --sidebar-border: 200 40% 20%;
+    --sidebar-ring: 180 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
